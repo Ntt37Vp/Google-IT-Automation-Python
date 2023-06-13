@@ -1,6 +1,8 @@
 # Course 1 Week 4 - Strings, Lists & Dicts
 
+###################### STRINGS ###########################
 # Strings are Arrays
+# String is an IMMUTABLE data type
 # Assigning string to a var
     # greeting = "Hello World"
 
@@ -217,4 +219,14 @@ ut labore et dolore magna aliqua.
 # # Should display "In April, the CEO will hold a conference"
 # print(replace_date("The convention is scheduled for October", "October", "June"))
 # # Should display "The convention is scheduled for June"
+
+###################### LISTS ###########################
+# List is a MUTABLE data type
+# like Strings, LISTS are sequences
+
+# List Methods
+# append() Adds an element at the end of the list
+# insert() Adds an element at the specified position
+# remove() Removes the first item with the specified value
+# pop() Removes the element at the specified position
 
