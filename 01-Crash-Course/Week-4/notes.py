@@ -4,7 +4,7 @@
 # Strings are Arrays
 # String is an IMMUTABLE data type
 # Assigning string to a var
-    # greeting = "Hello World"
+# greeting = "Hello World"
 
 # Multi-line string using three quotes
 '''
@@ -16,9 +16,9 @@ ut labore et dolore magna aliqua.
 
 # String data type can be sliced, modified and concantenated
 # String Methods examples
-    # upper()
-    # lower()
-    # strip()
+# upper()
+# lower()
+# strip()
 
 # Sample function that replaces old domain by new domain
 # def replace_domain(email, old_domain, new_domain):
@@ -29,33 +29,33 @@ ut labore et dolore magna aliqua.
 #     return email
 
 # More Strings Methods
-    # lstrip()
-    # rstrip()
-    # endswith()
-    # isnumeric()
-    # join()
+# lstrip()
+# rstrip()
+# endswith()
+# isnumeric()
+# join()
 
-# Formatting using format() 
-    # def student_grade(name, grade):
-    # 	return "{} received {}% on the exam".format(name, grade)
-    # print(student_grade("Reed", 80))
-    # print(student_grade("Paige", 92))
-    # print(student_grade("Jesse", 85))
+# Formatting using format()
+# def student_grade(name, grade):
+# 	return "{} received {}% on the exam".format(name, grade)
+# print(student_grade("Reed", 80))
+# print(student_grade("Paige", 92))
+# print(student_grade("Jesse", 85))
 
 # Formatting using f string method
-    # def student_grade(name, grade):
-    # 	return f"{name} received {grade}% on the exam"
+# def student_grade(name, grade):
+# 	return f"{name} received {grade}% on the exam"
 
-    # print(student_grade("Reed", 80))
-    # print(student_grade("Paige", 92))
-    # print(student_grade("Jesse", 85))
+# print(student_grade("Reed", 80))
+# print(student_grade("Paige", 92))
+# print(student_grade("Jesse", 85))
 
 # Formatting expression example to limit the digits
-    # price = 7.50
-    # with_tax = price * 1.09
-    # print(price, with_tax)  # will output 7.5 8.175
-    # # updating using :.2 format
-    # print("Base price: ${:.2f} With Tax: ${:.2f}".format(price, with_tax))
+# price = 7.50
+# with_tax = price * 1.09
+# print(price, with_tax)  # will output 7.5 8.175
+# # updating using :.2 format
+# print("Base price: ${:.2f} With Tax: ${:.2f}".format(price, with_tax))
 
 
 # String Reference Guide
@@ -80,7 +80,7 @@ ut labore et dolore magna aliqua.
 #     string.split() - Returns a list of substrings that were separated by whitespace (a space, tab, or new line)
 #     string.split(delimiter) - Returns a list of substrings that were separated by whitespace or a delimiter
 #     string.replace(old, new) - Returns a new string where all occurrences of old have been replaced by new.
-#     delimiter.join(list of strings) - Returns a new string with all the strings joined by the delimiter 
+#     delimiter.join(list of strings) - Returns a new string with all the strings joined by the delimiter
 
 # String Operations and Methods
 #
@@ -163,7 +163,7 @@ ut labore et dolore magna aliqua.
 # print(convert_weight(50.5))  # Should be: 50.5 ounces equals 3.16 pounds
 # print(convert_weight(16))  # Should be: 16 ounces equals 1.00 pounds
 
-### Study Guide 3
+# Study Guide 3
 # This function generates a username using the first 3 letters of a
 # user’s last name plus their birth year.
 # def username(last_name, birth_year):
@@ -181,7 +181,7 @@ ut labore et dolore magna aliqua.
 # print(username("Deng", "1991"))
 # # Should display "Den1991"
 
-### Study Guide 4
+# Study Guide 4
 # This function checks a given schedule entry for an old date and, if
 # found, the function replaces it with a new date.
 # def replace_date(schedule, old_date, new_date):
@@ -230,3 +230,192 @@ ut labore et dolore magna aliqua.
 # remove() Removes the first item with the specified value
 # pop() Removes the element at the specified position
 
+# enumerate() returns a tuple of the index and the item
+
+# Iterating Over Lists Using Enumerate
+
+# List Comprehension
+# multiples = [(x*7) for x in range(1,11)]
+# print(multiples)
+
+# languages = ["Python", "Java", "C", "PHP"]
+# new_list = [len(lang) for lang in languages]
+# print(new_list)
+
+
+# More List Comprehension Examples
+# Simple List Comprehension
+# print("List comprehension result:")
+
+# # The following list comprehension compacts several lines
+# # of code into one line:
+# print([x*2 for x in range(1,11)])
+
+# ### Long form for loop
+# print("Long form code result:")
+
+# # The list comprehension above accomplishes the same result as
+# # the long form version of the code:
+# my_list = []
+# for x in range(1,11):
+#    my_list.append(x*2)
+# print(my_list)
+
+
+# List Comprehension with Conditional Statement
+# print("List comprehension result:")
+
+# # The following list comprehension compacts multiple lines
+# # of code into one line:
+# print([ x for x in range(1,101) if x % 10 == 0 ])
+
+# ### Long form for loop with nested if-statement
+# print("Long form code result:")
+
+# # The list comprehension above accomplishes the same result as
+# # the long form version of the code:
+# my_list = []
+# for x in range(1,101):
+#   if x % 10 == 0:
+#     my_list.append(x)
+# print(my_list)
+
+
+# Study Guide: Lists Operations and Methods
+# Lists and tuples are both sequences and they share a number of sequence operations. The following common sequence operations are used by both lists and tuples:
+#     len(sequence) - Returns the length of the sequence.
+
+#     for element in sequence - Iterates over each element in the sequence.
+
+#     if element in sequence - Checks whether the element is part of the sequence.
+
+#     sequence[x] - Accesses the element at index [x] of the sequence, starting at zero
+
+#     sequence[x:y] - Accesses a slice starting at index [x], ending at index [y-1]. If [x] is omitted, the index will start at 0 by default. If [y] is omitted, the len(sequence) will set the ending index position by default.
+
+#     for index, element in enumerate(sequence) - Iterates over both the indices and the elements in the sequence at the same time.
+
+
+# Coding Skills Exercise 1
+# # This block of code changes the year on a list of dates.
+# # The "years" list is given with existing elements.
+# years = ["January 2023", "May 2025", "April 2023", "August 2024", "September 2025", "December 2023"]
+
+
+# # The variable "updated_years" is initialized as a list data type
+# # using empty square brackets []. This list will hold the new list
+# # with the updated years.
+# updated_years = []
+
+# # The for loop checks each "year" element in the list "years".
+# for year in years:
+
+#     # The if-statement checks if the "year" element ends with the
+#     # substring "2023".
+#     if year.endswith("2023"):
+
+#         # If True, then a temporary variable "new" will hold the
+#         # modified "year" element where the "2023" substring is
+#         # replaced with the substring "2024".
+#         new = year.replace("2023","2024")
+
+#         # Then, the list "updated_years" is appended with the changed
+#         # element held in the temporary variable "new".
+#         updated_years.append(new)
+
+#     # If False, the original "year" element will be appended to the
+#     # the "updated_years" list unchanged.
+#     else:
+#         updated_years.append(year)
+
+
+# print(updated_years)
+# # Should print ["January 2024", "May 2025", "April 2024", "August 2024", "September 2025", "December 2024"]
+
+# Coding Skills Exercise 2
+# # This list comprehension creates a list of squared numbers (n*n). It
+# # accepts two integer variables through the function’s parameters.
+# def squares(start, end):
+
+# # The list comprehension calculates the square of a variable integer
+# # "n", where "n" ranges from the "start" to "end" variables inclusively.
+# # To be inclusive in a range(), add +1 to the end of range variable.
+#     return [n*n for n in range(start,end+1)]
+
+
+# print(squares(2, 3))  # Should print [4, 9]
+# print(squares(1, 5))  # Should print [1, 4, 9, 16, 25]
+# print(squares(0, 10)) # Should print [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+# Coding Skills Exercise 3
+# # This block of code also changes the year on a list of dates using a
+# # different approach than demonstrated in Skill Group 1. By using a
+# # list comprehension, you can see how it is possible to refactor the
+# # code to a shorter, more efficient code block.
+
+# # The "years" list is given with existing elements.
+# years = ["January 2023", "May 2025", "April 2023", "August 2024", "September 2025", "December 2023"]
+
+# # The list comprehension below creates a new list "updated_years" to
+# # hold the command to replace the "2023" substring of the "year"
+# # element with the substring "2024". This action will be executed if
+# # the last 4 indices of the "year" string is equal to the substring
+# # "2023". If false (else), the "year" element will be included in the
+# # new list "updated_years" unchanged.
+# updated_years = [year.replace("2023","2024") if year[-4:] == "2023" else year for year in years]
+
+
+# print(updated_years)
+# # Should print ["January 2024", "May 2025", "April 2024", "August 2024", "September 2025", "December 2024"]
+
+# Coding Skills Exercise 4
+# # This function splits a given string into a list of elements. Then, it
+# # modifies each element by moving the first character to the end of the
+# # element and adds a dash between the element and the moved character.
+# # For example, the element "2two" will be changed to "two-2". Finally,
+# # the function converts the list back to a string, and returns the
+# # new string.
+# def change_string(given_string):
+
+# # Initialize "new_string" as a string data type by using empty quotes.
+#     new_string = ""
+#     # Split the "given_string" into a "new_list", with each "element"
+#     # holding an individual word from the string.
+#     new_list = given_string.split()
+
+#     # The for loop iterates over each "element" in the "new_list".
+#     for element in new_list:
+
+#         # Convert the list into a "new_string" by using the assignment
+#         # operator += to concatenate the following items:
+#         # + Each list "element" (starting at index position [1:]),
+#         # + a dash "-",
+#         # + append the first character of the "element" (using the index
+#         # [0]) to the end of the "element", and finally,
+#         # + a space " " to separate each "element" in the "new_string".
+#         new_string += element[1:] + "-"  + element[0] + " "
+
+#     # Return the list that has been converted back into a string.
+#     return new_string
+
+
+# print(change_string("1one 2two 3three 4four 5five"))
+# # Should print "one-1 two-2 three-3 four-4 five-5"
+
+# Coding Skills Exercise 5
+# This function accepts a list name and a list of elements, and returns
+# a string with the format: "The "list_name" list includes: element1,
+# element2, element3".
+# def list_elements(list_name, elements):
+
+#     # This task can be completed in a single line of code. The
+#     # concatenation of strings, "list_name", and the list "elements" can
+#     # occur on the return line. In this case, the string "The " is added
+#     # to the "list_name", plus the string " list includes: ", then the
+#     # "elements" are joined using a comma to separate each element of the
+#     # list.
+#     return "The " + list_name + " list includes: " + ", ".join(elements)
+
+
+# print(list_elements("Printers", ["Color Printer", "Black and White Printer", "3-D Printer"]))
+# # Should print "The Printers list includes: Color Printer, Black and White Printer, 3-D Printer"
