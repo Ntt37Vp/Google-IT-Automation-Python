@@ -332,6 +332,7 @@ ut labore et dolore magna aliqua.
 # print(updated_years)
 # # Should print ["January 2024", "May 2025", "April 2024", "August 2024", "September 2025", "December 2024"]
 
+
 # Coding Skills Exercise 2
 # # This list comprehension creates a list of squared numbers (n*n). It
 # # accepts two integer variables through the function’s parameters.
@@ -346,6 +347,7 @@ ut labore et dolore magna aliqua.
 # print(squares(2, 3))  # Should print [4, 9]
 # print(squares(1, 5))  # Should print [1, 4, 9, 16, 25]
 # print(squares(0, 10)) # Should print [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
 
 # Coding Skills Exercise 3
 # # This block of code also changes the year on a list of dates using a
@@ -402,6 +404,7 @@ ut labore et dolore magna aliqua.
 # print(change_string("1one 2two 3three 4four 5five"))
 # # Should print "one-1 two-2 three-3 four-4 five-5"
 
+
 # Coding Skills Exercise 5
 # This function accepts a list name and a list of elements, and returns
 # a string with the format: "The "list_name" list includes: element1,
@@ -419,3 +422,14 @@ ut labore et dolore magna aliqua.
 
 # print(list_elements("Printers", ["Color Printer", "Black and White Printer", "3-D Printer"]))
 # # Should print "The Printers list includes: Color Printer, Black and White Printer, 3-D Printer"
+
+
+#### I asked ChatGPT how to loop through a list of tuples ###
+data = [('Ken', 30, 'Chef'), ('Pat', 35, 'Lawyer'), ('Amanda', 25, 'Engineer')]
+
+for item in data:
+    name, age, profession = item  # Unpack the tuple elements
+
+    # Generate the desired output
+    output = f"{name} is {age} years old and works as {profession}"
+    print(output)
