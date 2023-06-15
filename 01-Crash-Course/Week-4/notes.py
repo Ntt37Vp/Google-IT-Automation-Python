@@ -433,3 +433,15 @@ for item in data:
     # Generate the desired output
     output = f"{name} is {age} years old and works as {profession}"
     print(output)
+
+
+###################### DICTIONARY ###########################
+# A Python dictionary is a collection which is ordered** and changeable. No duplicate members.
+# It is of course, a Mutable data type.
+
+# Sample dict
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
