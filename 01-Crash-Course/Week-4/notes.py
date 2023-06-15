@@ -425,14 +425,14 @@ ut labore et dolore magna aliqua.
 
 
 #### I asked ChatGPT how to loop through a list of tuples ###
-data = [('Ken', 30, 'Chef'), ('Pat', 35, 'Lawyer'), ('Amanda', 25, 'Engineer')]
-
-for item in data:
-    name, age, profession = item  # Unpack the tuple elements
-
-    # Generate the desired output
-    output = f"{name} is {age} years old and works as {profession}"
-    print(output)
+# data = [('Ken', 30, 'Chef'), ('Pat', 35, 'Lawyer'), ('Amanda', 25, 'Engineer')]
+#
+# for item in data:
+#     name, age, profession = item  # Unpack the tuple elements
+#
+#     # Generate the desired output
+#     output = f"{name} is {age} years old and works as {profession}"
+#     print(output)
 
 
 ###################### DICTIONARY ###########################
@@ -445,3 +445,8 @@ thisdict = {
   "model": "Mustang",
   "year": 1964
 }
+# Access values by referencing the keys
+print(thisdict["year"])
+
+# Use IN keyword to check if the key is on the dict\
+# remove elements from a dictionary by using the del keyword.
