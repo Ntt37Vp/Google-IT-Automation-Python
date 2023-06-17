@@ -440,13 +440,24 @@ ut labore et dolore magna aliqua.
 # It is of course, a Mutable data type.
 
 # Sample dict
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
 # Access values by referencing the keys
-print(thisdict["year"])
+# print(thisdict["year"])
 
 # Use IN keyword to check if the key is on the dict\
 # remove elements from a dictionary by using the del keyword.
+
+## Looping through dict
+# using .items() method
+# for x, y in thisdict.items():
+#   print(x, y)
+# using .values()
+# for x in thisdict.values():
+#   print(x)
+# using .keys()
+# for x in thisdict.keys():
+#   print(x)
