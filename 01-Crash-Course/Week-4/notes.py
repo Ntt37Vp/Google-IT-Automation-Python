@@ -220,6 +220,8 @@ ut labore et dolore magna aliqua.
 # print(replace_date("The convention is scheduled for October", "October", "June"))
 # # Should display "The convention is scheduled for June"
 
+
+
 ###################### LISTS ###########################
 # List is a MUTABLE data type
 # like Strings, LISTS are sequences
@@ -284,15 +286,10 @@ ut labore et dolore magna aliqua.
 # Study Guide: Lists Operations and Methods
 # Lists and tuples are both sequences and they share a number of sequence operations. The following common sequence operations are used by both lists and tuples:
 #     len(sequence) - Returns the length of the sequence.
-
 #     for element in sequence - Iterates over each element in the sequence.
-
 #     if element in sequence - Checks whether the element is part of the sequence.
-
 #     sequence[x] - Accesses the element at index [x] of the sequence, starting at zero
-
 #     sequence[x:y] - Accesses a slice starting at index [x], ending at index [y-1]. If [x] is omitted, the index will start at 0 by default. If [y] is omitted, the len(sequence) will set the ending index position by default.
-
 #     for index, element in enumerate(sequence) - Iterates over both the indices and the elements in the sequence at the same time.
 
 
@@ -548,32 +545,32 @@ ut labore et dolore magna aliqua.
 # The function should reverse the keys and values to show which
 # categories (values) each resource (key) belongs to.
 
-def invert_resource_dict(resource_dictionary):
-  # Initialize a "new_dictionary" variable as a dict data type using
-  # empty {} curly brackets.
-    new_dictionary = {}
-    # The outer for loop iterates through each "resource_group" and
-    # associated "resources" in the "resource_dictionary" items.
-    for resource_group, resources in resource_dictionary.items():
-        # The inner for loop iterates over each "resource" value in
-        # the list of "resources" for one "resource_group" key at a time.
-        for resource in resources:
-            # The if-statement checks if the current "resource" value has
-            # been appended as a key to the "new_dictionary" yet.
-            if resource in new_dictionary:
-                # If True, then append the "resource_group" as a value to the
-                # "resource", which is now the key.
-                new_dictionary[resource].append(resource_group)
-            # If False (else), then add the "resource" as a new key with the
-            # "resource_group" as a value for that key.
-            else:
-                new_dictionary[resource] = [resource_group]
-    # Return the new dictionary once the outer for loop has completed
-    # all iterations.
-    return(new_dictionary)
-
-
-print(invert_resource_dict({"Hard Drives": ["IDE HDDs", "SCSI HDDs"],
-        "PC Parts":  ["IDE HDDs", "SCSI HDDs", "High-end video cards", "Basic video cards"], "Video Cards": ["High-end video cards", "Basic video cards"]}))
+# def invert_resource_dict(resource_dictionary):
+#   # Initialize a "new_dictionary" variable as a dict data type using
+#   # empty {} curly brackets.
+#     new_dictionary = {}
+#     # The outer for loop iterates through each "resource_group" and
+#     # associated "resources" in the "resource_dictionary" items.
+#     for resource_group, resources in resource_dictionary.items():
+#         # The inner for loop iterates over each "resource" value in
+#         # the list of "resources" for one "resource_group" key at a time.
+#         for resource in resources:
+#             # The if-statement checks if the current "resource" value has
+#             # been appended as a key to the "new_dictionary" yet.
+#             if resource in new_dictionary:
+#                 # If True, then append the "resource_group" as a value to the
+#                 # "resource", which is now the key.
+#                 new_dictionary[resource].append(resource_group)
+#             # If False (else), then add the "resource" as a new key with the
+#             # "resource_group" as a value for that key.
+#             else:
+#                 new_dictionary[resource] = [resource_group]
+#     # Return the new dictionary once the outer for loop has completed
+#     # all iterations.
+#     return(new_dictionary)
+#
+#
+# print(invert_resource_dict({"Hard Drives": ["IDE HDDs", "SCSI HDDs"],
+#         "PC Parts":  ["IDE HDDs", "SCSI HDDs", "High-end video cards", "Basic video cards"], "Video Cards": ["High-end video cards", "Basic video cards"]}))
 # Should print {'IDE HDDs': ['Hard Drives', 'PC Parts'], 'SCSI HDDs': ['Hard Drives', 'PC Parts'], 'High-end video cards': ['PC Parts', 'Video Cards'], 'Basic video cards': ['PC Parts', 'Video Cards']}
 
