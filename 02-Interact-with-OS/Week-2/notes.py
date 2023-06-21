@@ -32,3 +32,24 @@ import os
 # os.remove('file2.txt')
 # os.rename('filename')
 # os.path.exists('file3.txt')
+# os.path.abspath('file.txt')  #returns the absolute path
+# os.path.getsize('file')
+# os.path.getmtime('file')
+
+# using datetime module to convert the unix time
+# import datetime
+# timestamp = os.path.getmtime('file.txt')
+# print(datetime.datetime.fromtimestamp(timestamp))
+
+
+# Directories
+# os.getcwd()  Returns the current working directory
+# os.mkdir()  Creates a directory (with a specified mode)
+# os.chdir()  Change the current working directory
+# os.rmdir()
+# os.listdir()  Returns a list of the names of the entries in a directory
+# os.path.join()
+# Join two or more pathname components, inserting '/' as needed.
+# If any component is an absolute path, all previous path components will be discarded.
+# An empty last part will result in a path that ends with a separator.
+# By using os.path.join we can concatenate directories in a way that can be used with other os.path() functions.
