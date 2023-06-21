@@ -53,3 +53,22 @@ import os
 # If any component is an absolute path, all previous path components will be discarded.
 # An empty last part will result in a path that ends with a separator.
 # By using os.path.join we can concatenate directories in a way that can be used with other os.path() functions.
+
+
+## Reading and Writing CSV files
+
+# Parsing a file means analyzing its content to correctly structure the data.
+# HTML, JSON, CSV are examples
+
+# Using CSV module
+# import csv
+#
+# f = open('country.csv')
+# csv_f = csv.reader(f)
+# for row in csv_f:
+#     Name, Code = row
+#     print(f"{Name}, {Code}")
+# f.close()
+
+
+## Generating CSV
