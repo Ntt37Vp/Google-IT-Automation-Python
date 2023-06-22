@@ -61,8 +61,8 @@ import os
 # HTML, JSON, CSV are examples
 
 # Using CSV module
-# import csv
-#
+import csv
+
 # f = open('country.csv')
 # csv_f = csv.reader(f)
 # for row in csv_f:
@@ -72,3 +72,25 @@ import os
 
 
 ## Generating CSV
+# with Lists
+# hosts = [["workstation.local", "192.168.25.46"], ["webserver.cloud", "10.2.5.6"]]
+# with open('hosts.csv', 'w') as hosts_csv:
+#     writer = csv.writer(hosts_csv)
+#     writer.writerows(hosts)
+
+## Generating CSV
+# with Lists of Dicts using DictReader
+# with open('software.csv') as software:
+#     reader = csv.DictReader(software)
+#     for row in reader:
+#         print("{} has {} users").format(row["name"], row["users"])
+
+# using DictWriter
+# users = [{"name":"Sol Mansi", "username":"solm", "dep":"IT infra"},
+#         {"name":"Juan Tamad", "username":"juant", "dep":"HR"},
+#         {"name":"Sol Mansi", "username":"solm", "dep":"IT infra"}]
+# keys = ["name", "username", "dep"]
+# with open('by_department.csv', 'w') as by_department:
+#     writer = csv.DictWriter(by_department, fieldnames=keys)
+#     writer.writeheader()
+#     writer.writerows(users)
