@@ -11,3 +11,5 @@ txt = "The rain in Spain [12345] que sera whatever"
 regex = r"\[(\d+)\]"
 result= re.search(regex, txt)
 print(result[1]) 
+
+# Basic matching with GREP
