@@ -80,7 +80,7 @@ import re
     # <re.Match object; span=(0, 9), match='pygmalion'>
     
 # Python implementation of repitition uses plus + and question ?
-    # + (plus) One or more occurrences
+    # + (plus) Matches one or more occurrences of the character before it
     # ? (question) Zero or one occurrences
 
 
