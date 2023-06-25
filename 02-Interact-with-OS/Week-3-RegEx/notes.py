@@ -79,3 +79,14 @@ import re
     # print(re.search(r"py.*n", "pygmalion"))
     # <re.Match object; span=(0, 9), match='pygmalion'>
     
+# Python implementation of repitition uses plus + and question ?
+    # + (plus) One or more occurrences
+    # ? (question) Zero or one occurrences
+
+
+# Escaping characters using the back slash \
+    # \W Returns a match where the string DOES NOT contain any word characters
+    # \s Returns a match where the string contains a white space character
+
+
+# Advanced RegEx
