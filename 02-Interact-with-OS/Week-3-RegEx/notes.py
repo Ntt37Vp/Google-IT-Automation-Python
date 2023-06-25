@@ -90,3 +90,68 @@ import re
 
 
 # Advanced RegEx
+# Capturing Groups using parenthesis ()
+# example, capture LastName, FirstName
+# result = re.search(r"^(\w*), (\w*)$", "Lovelace, Ada")
+## print(result)
+## <re.Match object; span=(0, 13), match='Lovelace, Ada'>
+# using groups() method
+# print(result.groups())
+# print(result[0])
+# print(result[1])
+# print(result[2])
+# fullname = "{} {}".format(result[2], result[1])
+# print(fullname)
+
+## let's create a function to see it in action!
+# def rearrange_name(name):
+#     result = re.search(r"^([\w \.-]*), ([\w \.-]*)$", name)
+#     if result is None:
+#         return name
+#     else:
+#         return "{} {}".format(result[2], result[1])
+
+
+# print(rearrange_name("Lovelace, Ada"))
+# print(rearrange_name("Ada Lovelace"))
+# print(rearrange_name("Kennedy, John F."))
+# print(rearrange_name("John F. Kennedy"))
+
+
+# More repetitive qualifiers
+    # numeric repetition qualifiers using curly brackets {}
+    # example, to match a string with 5 letters
+    # print(re.findall(r"[a-zA-Z]{5}", "the quick brown fox jumps over the lazy dog"))
+    # # output is
+    # ['quick', 'brown', 'jumps']
+
+
+# Special sequences Quicklist
+    # \b Returns a match where the specified characters are at the beginning or at the end of a word
+    # \d Returns a match where the string contains digits (numbers from 0-9)
+    # \w Returns a match where the string contains any word characters (characters from a to Z, digits from 0-9, and the underscore _ character)
+
+
+
+# Splitting and Replacing
+    # example, split or separate sentences that ends with period, question mark and exclamation
+    # word_list = re.split(r"[.?!]", "One sentence. Another one? And last one!")
+    # print(word_list)
+    # output is
+    # ['One sentence', ' Another one', ' And last one', '']
+
+    # to include the captured punctuation use the parenthesis
+    # word_list2 = re.split(r"([.?!])", "One sentence. Another one? And last one!")
+    # print(word_list2)
+    # output is
+    # ['One sentence', '.', ' Another one', '?', ' And last one', '!', '']
+
+    # The SUB() function
+    # The sub() function replaces the matches with the text of your choice:
+    # example, let's replace the email address with REDACTED
+
+    # message = re.sub(r"[\w.%+-]+@[\w.-]+", "<REDACTED>", "Received an email from des_nuts69@myemail.com")
+    # print(message)
+    # output is
+    # Received an email from <REDACTED>
+
