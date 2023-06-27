@@ -104,3 +104,4 @@ print(result.returncode)
 
 
 # PROCESSING LOG FILES
+# check out the example check_cron.py script
