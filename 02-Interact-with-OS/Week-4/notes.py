@@ -76,3 +76,5 @@ import subprocess
 # print(result3.stdout.decode().split())
 
 # advanced subprocess management
+# Using the copy method
+my_env = os.environ.copy()
