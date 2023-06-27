@@ -22,9 +22,9 @@ import sys
 import subprocess
 
 
-print("Home: " + os.environ.get("HOME", ""))
-print("SHELL: " + os.environ.get("SHELL", ""))
-print("FRUIT: " + os.environ.get("FRUIT", ""))
+# print("Home: " + os.environ.get("HOME", ""))
+# print("SHELL: " + os.environ.get("SHELL", ""))
+# print("FRUIT: " + os.environ.get("FRUIT", ""))
 
 # The .get method is quiet helpful
 
@@ -59,7 +59,20 @@ print("FRUIT: " + os.environ.get("FRUIT", ""))
 
 
 # Python Subprocesses
-# import subprocess
+
 # use the .run method to run a linux system command
 # example, to run "date" command enter
 # subprocess.run(["date"])
+# result = subprocess.run(["sleep", "2"])
+# print(result.returncode)
+# result2 = subprocess.run(["ls", "showfile.txt"])
+# print(result2.returncode)
+
+# capturing the output using
+# capture_output = True
+# result3 = subprocess.run(["host", "8.8.8.8"], capture_output=True)
+# print(result3.returncode)
+# print(result3.stdout)  # This prints out a byte array b' data
+# print(result3.stdout.decode().split())
+
+# advanced subprocess management
