@@ -62,9 +62,9 @@ import subprocess
 
 # use the .run method to run a linux system command
 # example, to run "date" command enter
-# subprocess.run(["date"])
-# result = subprocess.run(["sleep", "2"])
-# print(result.returncode)
+subprocess.run(["date"])
+result = subprocess.run(["sleep", "2"])
+print(result.returncode)
 # result2 = subprocess.run(["ls", "showfile.txt"])
 # print(result2.returncode)
 
@@ -77,4 +77,30 @@ import subprocess
 
 # advanced subprocess management
 # Using the copy method
-my_env = os.environ.copy()
+# my_env = os.environ.copy()
+
+
+# Learn more about the Subprocess management module in
+# https://docs.python.org/3/library/subprocess.html
+
+
+# Practice Quiz
+# What type of object does a RUN func return?
+# > CompletedProcess
+
+# How can you change the CWD where a cmd will be executed?
+# > use CWD param
+
+# When a child process is ran using Subprocess module which of the ff is true
+# Child runs in a secondary env
+# Parent process is blocked
+# Control is returned to parent???
+
+# When using RUN command in Subprocess module what param is set to True to allow output of system command?
+# capture_output
+
+# What does COPY method of OS.ENVIRON do?
+# Creates a new dictionary of environment variables ??
+
+
+# PROCESSING LOG FILES
