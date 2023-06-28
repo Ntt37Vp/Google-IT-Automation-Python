@@ -21,6 +21,9 @@
 # unittest.main()
 # don't forget to add the unittest.main() in the unit test file
 
+# adding different scenarios
+# EDGE cases -- are inputs to our code that produce unexpected results, and are found at the extreme ends of the ranges of input we imagine our programs will typically work with
+
 
 # Other Tests Concepts
 
