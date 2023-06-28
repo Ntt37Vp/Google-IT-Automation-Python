@@ -62,9 +62,9 @@ import subprocess
 
 # use the .run method to run a linux system command
 # example, to run "date" command enter
-subprocess.run(["date"])
-result = subprocess.run(["sleep", "2"])
-print(result.returncode)
+# subprocess.run(["date"])
+# result = subprocess.run(["sleep", "2"])
+# print(result.returncode)
 # result2 = subprocess.run(["ls", "showfile.txt"])
 # print(result2.returncode)
 
@@ -105,3 +105,11 @@ print(result.returncode)
 
 # PROCESSING LOG FILES
 # check out the example check_cron.py script
+
+# create an empty dict
+usernames = {}
+# assign a username
+name = "good_user"
+# add to dict with value of 1
+usernames[name] = usernames.get(name, 0) + 1
+print(usernames)
