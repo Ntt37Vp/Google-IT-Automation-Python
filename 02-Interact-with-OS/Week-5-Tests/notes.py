@@ -26,5 +26,11 @@
 
 
 # Other Tests Concepts
+# Black Box vs White Box (transparent)
+# Smoke Test
+# Test Suite
+# Load testing verifies the behavior of the software remains consistent under conditions of significant load.
+# Regression test -- Regression testing is a type of software test used to confirm that a recent program or code change has not adversely affected existing features, by re-executing a full or partial selection test cases.
+# Test Driven Dev (TDD)
 
 # Errors & Exceptions
