@@ -34,3 +34,52 @@
 # Test Driven Dev (TDD)
 
 # Errors & Exceptions
+# Try-Except construct
+# Raising our OWN errors : USE RAISE ERROR_NAME
+# example:
+# def validate_num(minlen):
+#     if minlen < 1:
+#         raise ValueError("number must be at least 1")
+#     return "OK!"
+
+
+# validate_num(0)
+# when ran, the output is
+# ValueError: number must be at least 1
+# the ASSERT keyword is used to produce a message when a conditional is false.
+# The assert keyword is used when debugging code.
+# The assert keyword lets you test if a condition in your code returns True, if not, the program will raise an AssertionError.
+# example:
+# x = "hello world"
+
+# # if condition returns True, then nothing happens:
+# assert x == "hello world"
+
+# # if condition returns False, AssertionError is raised:
+# assert x == "goodbye world"
+
+# the AssertRaises function inside the unittest module
+# pass the Error first, then the Function, then the params
+
+# Summary of Erros and Exceptions
+# Raise allows you to throw an exception at any time.
+# Assert enables you to verify if a certain condition is met and throw an exception if it isn’t.
+# The standard library documentation is kind of unclear.
+# Basically `assert <something false>` will raise AssertionError, which the caller may need to handle.
+
+# In the try clause, all statements are executed until an exception is encountered.
+# Except is used to catch and handle the exception(s) that are encountered in the try clause.
+# Other interesting Exception handling readings:
+# https://doughellmann.com/posts/python-exception-handling-techniques/
+
+
+# Jupyter notebook activity notes
+# unittest.main(argv = ['first-arg-is-ignored'], exit = False)
+# import unittest
+
+# class TestCompiler(unittest.TestCase):
+
+#     def test_basic(self):
+#         testcase = "The best preparation for tomorrow is doing your best today."
+#         expected = ['b', 'a', 'a', 'b', 'a']
+#         self.assertEqual(LetterCompiler(testcase), expected)
