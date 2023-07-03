@@ -38,6 +38,8 @@
 # SYS module has a usefull STDIN function
 # see attached haiku.txt and capitalize.py as examples
 # cat haiku.txt | ./capitalize.py
+# OR
+# ./capitalize.py < haiku.txt
 
 
 # Bash scripting
