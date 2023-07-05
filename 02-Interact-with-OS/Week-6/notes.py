@@ -103,8 +103,7 @@
 #     top: shows the processes currently using the most CPU time (press "q" to quit)
 
 
-
-## Bash scripting
+# Bash scripting
 
 # filename ends in .sh
 # #!/bin/bash
@@ -117,8 +116,35 @@
 # echo *.py  shows all py files
 # ? question marks matches 1 character
 
-# conditional execution in bash
+# conditional execution in bash using exit status (think, IF block in Python)
 # in Bash script, an Exit Value of 0 means SUCCESS.
+# use $? to check the exit status
+# in bash, IF blocks are ended with FI keyword
+# TEST is a command that evaluates the conditions received and exits with zero (0) when they are true and with one (1) when they're false.
+# remember to put ;# example below
+# if test -n "$PATH"; then echo "not empty"; fi
 
 
-## Advanced bash
+# ADVANCED BASH
+
+# while loop in bash
+# in bash, WHILE loops are ended with DONE
+# format:
+# while [ ]; do
+#   body
+# done
+# actual example loaded in sample_while.sh ::
+#!/bin/bash
+
+# n=1
+# while [ $n -le 5 ]; do
+#     echo "iteration number $n"
+#     ((n+=1))
+# done
+
+# the $n -le 5 means, while n is less than or equal to 5
+
+# in Python's sys.argv[1] construct to getting the first command line argument, bash uses $1
+
+
+# for loop in bash
