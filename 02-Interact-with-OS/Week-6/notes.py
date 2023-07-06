@@ -143,8 +143,18 @@
 # done
 
 # the $n -le 5 means, while n is less than or equal to 5
-
+# the (( )) double parenthesis lets you do arithmetic in bash
 # in Python's sys.argv[1] construct to getting the first command line argument, bash uses $1
 
 
 # for loop in bash
+# sample for loop:
+
+# #!/bin/bash
+
+# for fruit in peach orange apple; do
+#     echo "I like $fruit"
+# done
+
+# use spaces , end with ; do
+# indent then DONE
