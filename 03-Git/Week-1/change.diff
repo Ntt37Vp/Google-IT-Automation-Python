@@ -1,0 +1,8 @@
+--- file1.txt	2023-07-09 12:19:53.401245044 -0400
++++ file2.txt	2023-07-09 12:20:25.831245090 -0400
+@@ -1 +1,2 @@
+-I am file 1
+\ No newline at end of file
++I am file 1
++with appended line
+\ No newline at end of file
