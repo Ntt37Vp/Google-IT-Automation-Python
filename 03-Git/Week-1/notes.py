@@ -2,7 +2,7 @@
 # Week 1
 
 # Before VCS
-# DIFF 
+# DIFF
 # example:
 # DIFF file1 file2
 # -u flag shows a unified format
@@ -12,8 +12,11 @@
 # format:
 # DIFF -u file1 file2 > change.diff
 
-# .diff can be manually worked on OR automate using PATCH command! 
+# .diff can be manually worked on OR automate using PATCH command!
 # to use the PATCH:
 # PATCH target_file < fix_file.diff
 
 # Here comes VCS
+# Git
+# git-scm.com
+#
