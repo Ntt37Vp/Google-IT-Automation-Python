@@ -19,4 +19,18 @@
 # Here comes VCS
 # Git
 # git-scm.com
-#
+
+# Steps:
+# Install Git
+# sudo apt update
+# sudo apt install git
+# git --version
+
+# Initialize
+# mkdir my-git-repo
+# cd my-git-repo
+# git init
+
+# Config
+# git config --global user.name "Name"
+# git config --global user.email "user@example.com"
