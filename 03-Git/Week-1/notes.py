@@ -52,3 +52,12 @@
 # renaming and deleting
 # git rm (stop tracking and remove it)
 # git mv (rename)
+
+# Undoing
+# git checkout filename (git checkout restores files to the latest stored snapshot, reverting any changes before staging.)
+# git reset HEAD filename (to untrack; it's like the opposite of git ADD)
+# git commit --ammend (to ammend the mistakes on previous commits. git commit --amend allows us to modify and add changes to the most recent commit. )
+# WARNING! Do not use git commit --ammend to Public repos because it removes the commit history
+
+# Rollbacks
+# git revert (makes a new commit which effectively rolls back a previous commit. It’s a bit like an undo command.)
