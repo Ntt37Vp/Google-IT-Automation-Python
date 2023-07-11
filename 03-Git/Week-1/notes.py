@@ -46,6 +46,7 @@
 # review
 # git log -p (patch; shows the diff )
 # git show commitID (shows details of a specific commit ID)
+# (the git show command without an object parameter specified  will default to show us information about the commit pointed to by the HEAD.)
 # git diff (shows the changes made )
 # git add -p
 
@@ -61,3 +62,13 @@
 
 # Rollbacks
 # git revert (makes a new commit which effectively rolls back a previous commit. It’s a bit like an undo command.)
+# git revert, a new commit is created with inverse changes. This cancels previous changes instead of making it as though the original commit never happened.
+
+
+# Branching & Merging
+# A branch is a pointer
+# "Master" is the default branch
+# format
+# git branch new-branch-name OR shortcut git checkout -b branch-name
+# to transfer to another branch, use:
+# git checkout
