@@ -34,3 +34,21 @@
 # Config
 # git config --global user.name "Name"
 # git config --global user.email "user@example.com"
+
+# staging
+# git add -a
+
+# commit
+# git commit
+# git commit -m (to add short commit message)
+# git commit -a (shortcut to stage tracked files without using git add)
+
+# review
+# git log -p (patch; shows the diff )
+# git show commitID (shows details of a specific commit ID)
+# git diff (shows the changes made )
+# git add -p
+
+# renaming and deleting
+# git rm (stop tracking and remove it)
+# git mv (rename)
