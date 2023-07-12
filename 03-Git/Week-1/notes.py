@@ -72,3 +72,7 @@
 # git branch new-branch-name OR shortcut git checkout -b branch-name
 # to transfer to another branch, use:
 # git checkout
+# git branch -d branch-name-to-delete (to delete a branch)
+# git merge
+# Merging combines branched data and history together
+# git log --graph --oneline
