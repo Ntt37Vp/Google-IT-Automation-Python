@@ -15,4 +15,13 @@
 # git config --global credential.helper cache
 
 
+
+# git fetch
+# git merge
 # git pull
+
+# Sample flow of creating a new feature branch
+# git checkout -b new_feature
+# change codes, then commit
+# git push -u origin new_feature
+# git rebase
