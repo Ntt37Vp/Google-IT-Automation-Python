@@ -25,3 +25,15 @@
 # change codes, then commit
 # git push -u origin new_feature
 # git rebase
+# git rebase branch_name (moves the current branch on top of the new branch)
+# git push --delete origin new_feature (to delet the new branch)
+
+# git rebase and git merge (are simiar)
+# Rebasing instead of merging rewrites history and maintains linearity, making for cleaner code.
+
+# Practice QUiz
+# It's common practice to keep the latest version in the master branch and the latest stable version in a separate branch.
+# Git Rebase (use to change the base of the current branch)
+# Git Pull (command that will trigger a merge. git pull command runs git fetch with the given parameters, then calls git merge to merge the retrieved branch heads into the current branch.)
+
+
