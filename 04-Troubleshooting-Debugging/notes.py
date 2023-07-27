@@ -7,3 +7,15 @@
 # Steps:
 # Gather all avail info
 # Finding Root Cause
+
+# ltrace
+# wireshark
+# tcpdump
+
+# iotop
+# iostat
+# vmstat
+# iftop
+# nice
+
+# heisenbug -- aka the observer effect
