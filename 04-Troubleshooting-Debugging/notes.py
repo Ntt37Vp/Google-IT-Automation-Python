@@ -19,3 +19,8 @@
 # nice
 
 # heisenbug -- aka the observer effect
+
+# Week 2
+# A profiler is a tool that measures the resources that our code is using, giving us a better understanding of what's going on.
+# gprof for C
+# cProfile for Python
