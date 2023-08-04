@@ -24,3 +24,27 @@
 # A profiler is a tool that measures the resources that our code is using, giving us a better understanding of what's going on.
 # gprof for C
 # cProfile for Python
+
+# Testing the speed of the py and sh
+# use the TIME command
+# pprofile3
+# kcachegrind
+
+# I/O Bound
+# CPU Bound
+
+# SQLite
+# full pledged SQL
+# memcached
+
+# Concurrency in Python
+# "From concurrency" import futures
+# futures module has Executor
+# ThreadPoolExecutor -- threads
+# ProcessPoolExecutor -- uses processes in parallel computing
+
+# Python concurrency:
+# threading
+# asyncio
+# multiprocessing
+
