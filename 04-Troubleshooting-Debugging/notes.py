@@ -50,3 +50,15 @@
 
 
 # WEEK 3 - Crashing Programs
+
+# Check logs
+# memtest86 to check RAM
+# linux:varlog
+# win:event viewer
+
+# linux: Strace
+# win: process monitor
+# mac: Dtruss
+
+# A WRAPPER is a function or program that provides a compatibility layer between two functions or programs.
+# A CONTAINER allows the application to run in its own environment without interfering with the rest of the system.
