@@ -83,3 +83,7 @@
 # off-by-one!
 # printf!
 # core files!
+
+# WEEK 4 - Managing Computer Resources
+# A memory leak, happens when a chunk of memory that's no longer needed is not released.
+# C & C++ uses Garbage collector to manage memory alloc
