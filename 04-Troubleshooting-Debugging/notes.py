@@ -87,3 +87,26 @@
 # WEEK 4 - Managing Computer Resources
 # A memory leak, happens when a chunk of memory that's no longer needed is not released.
 # C & C++ uses Garbage collector to manage memory alloc
+# Profiler for C: Valgrind
+
+# Managing Disk Space
+
+# Network Saturation
+# Latency
+# Bandwidth
+# iftop
+
+
+# Dealing with Memory Leaks
+# uxterm
+# scroll buffer
+# od -cx /dev/urandom
+# python module : memory_profiler; to use:
+# from memory_profiler import profile
+
+# Practice Quiz
+# Memory Profiler -monitors memory consumption of a process over time, as well as the variables that require the most memory.
+# Use traffic shaping
+# Latency
+# TOP
+# delete?
