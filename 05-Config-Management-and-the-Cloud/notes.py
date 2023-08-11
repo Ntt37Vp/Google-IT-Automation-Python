@@ -39,3 +39,8 @@
 #     subscribe => File['/etc/httpd.conf'],
 #   }
 # }
+
+# Domain-specific lang
+# Variables are preceded with $ sign
+# Conditional statements
+# Facts - variables that represent char of a system
