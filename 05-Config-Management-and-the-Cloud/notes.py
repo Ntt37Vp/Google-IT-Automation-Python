@@ -1,4 +1,4 @@
-# Week 1 - Automating w/ Config Management
+# ##Week 1 - Automating w/ Config Management
 # Config Management -> Node
 # Puppet (think Ansible ;)
 # IaC (infra as code)
@@ -55,3 +55,5 @@
 # }
 
 # Test and Repair paradigm (makes sure the next steps are necessary and are not already in place)
+
+### WEEK 2 - Deploying Puppet ###
