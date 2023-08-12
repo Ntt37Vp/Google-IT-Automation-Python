@@ -44,3 +44,14 @@
 # Variables are preceded with $ sign
 # Conditional statements
 # Facts - variables that represent char of a system
+# Declarative languages - like Puppet DSL
+# Procedural languages - like Python or C
+# idempotent action - can be performed over & over again w/o changing the system after the 1st time the action was ran
+# EXEC runs commands for the users
+# use ONLYIF for commands that are not idempotent such as mv, example:
+# exec { 'move example file':
+#     command => 'mv /home/user/example.txt /home/user/Desktop',
+#     onlyif => 'test -e /home/user/example.txt',
+# }
+
+# Test and Repair paradigm (makes sure the next steps are necessary and are not already in place)
