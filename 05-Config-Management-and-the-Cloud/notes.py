@@ -70,3 +70,9 @@
 
 # CATALOG -- list of rules that are generated for one specific computer once the server has evaluated all var, cond and func
 
+# When declaring resources initially, we type the resource type in lowercase. When we reference a resource relationship from another file, we capitalize the resource name being referenced.
+
+# Metadata is data about data, and in this case, often takes the form of installation and compatibility information.
+
+# New functions added after installing a new module can be found in the lib folder in the directory of the new module.  
+
