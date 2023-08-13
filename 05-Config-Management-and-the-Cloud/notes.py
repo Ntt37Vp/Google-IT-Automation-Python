@@ -57,3 +57,16 @@
 # Test and Repair paradigm (makes sure the next steps are necessary and are not already in place)
 
 ### WEEK 2 - Deploying Puppet ###
+# sudo apt install puppet-master
+# create a puppet file "Manifest" ends with .pp
+
+# vim tools.pp
+# package { 'htop':
+#  ensure => present,
+# }
+
+# Apply
+# sudo puppet apply -v tools.pp
+
+# CATALOG -- list of rules that are generated for one specific computer once the server has evaluated all var, cond and func
+
