@@ -74,5 +74,6 @@
 
 # Metadata is data about data, and in this case, often takes the form of installation and compatibility information.
 
-# New functions added after installing a new module can be found in the lib folder in the directory of the new module.  
+# New functions added after installing a new module can be found in the lib folder in the directory of the new module.
 
+# A module -- collection of manifests and associated data (like templates and files)
