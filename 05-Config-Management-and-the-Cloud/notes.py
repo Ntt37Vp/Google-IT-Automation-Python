@@ -77,3 +77,79 @@
 # New functions added after installing a new module can be found in the lib folder in the directory of the new module.
 
 # A module -- collection of manifests and associated data (like templates and files)
+
+
+# Deploying Puppets to Clients
+# Puppet nodes -- any system that runs a puppet agent
+# Different kinds of nodes are defined, allowing different sets of rule catalogs to apply to different types of machines.
+# site.pp -->
+# CA to authenticate
+
+
+# sudo puppet config --section master set autosign true
+# then ssh into the target client
+# ssh clienthostname
+# install the client
+# sudo apt install puppet
+# set the server config on the client:
+# sudo puppet config set server servername.domain.com
+# sudo puppet agent -v --test
+
+# on the master
+# vim /etc/puppet/code/environments/production/manifest/site.pp
+
+# node webserver.example.com {
+#     class {'apache':}
+# }
+# node default {}
+
+# back to the client
+# sudo puppet agent -v --test
+
+
+# to automate puppet using systemctl instead of manual test
+# sudo systemctl enable puppet
+# sudo systemctl start puppet
+# sudo systemctl status puppet
+
+
+# Practice Quiz
+# using FQDN
+# node definition is a category of systems defined in the manifest used to apply different rules to different types of system
+# node requests for a cert
+
+
+# Updating Deployments
+# puppet parser validate -- command checks the syntax of the manifest to make sure it's correct.
+# --noop means no operation; No Operations mode makes Puppet simulate what it would do without actually doing it.
+
+# rspec-puppet -- spec-puppet tests are there to test the behaviour of Puppet when it compiles your manifests into a catalogue of Puppet resources.
+# For example, you might want to test that your apache::vhost defined type creates a file resource with a path of /etc/apache2/sites-available/foo when run on a Debian host.
+
+# require 'spec_helper'
+
+# describe 'logrotate::rule' do
+#   let(:title) { 'nginx' }
+
+#   it { is_expected.to contain_class('logrotate::setup') }
+# end
+
+# Check that your Puppet manifest conform to the style guide
+# install it
+# package { 'puppet-lint':
+#   ensure   => '1.1.0',
+#   provider => 'gem',
+# }
+# RUN it
+# $ puppet-lint /etc/puppet/modules
+
+
+# Practice Quiz
+# Environments in Puppet are used to isolate software in development from software being served to end users.
+# No Operations mode makes Puppet simulate what it would do without actually doing it. Simulating manifest evaluation without taking any actions
+# RSPEC tests do? check the manifest for specific contents
+# Canary env ? As a test env to detect problems before they reach prod
+# Ways to check syntax of manifests? run full NOOP, run RSPEC tests, Puppet Parser validate?
+
+
+# Module 2 Review
