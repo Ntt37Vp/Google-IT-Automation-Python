@@ -157,20 +157,30 @@
 # Ways to check syntax of manifests? run full NOOP, run RSPEC tests, Puppet Parser validate?
 
 
-
 ########################################
 ### Week 3 - Automation in the Cloud ###
 ########################################
 
 # SaaS - think WRS ;)
-# PaaS - 
+# PaaS -
 # IaaS - barebones
 
 # Capacity
 
 # Practice Quiz
 # Public cloud
-# Container - 
+# Container -
 # Amzn Elastic Beanstalk, G App Engine, MS App Service (examples of Managed Web App Platforms)
 # Private cloud
 # Vertical scaling
+
+# Managing Cloud VMs
+# the region, machine type,
+# reference imaging
+# disk image
+
+# show the os version
+# cat /etc/lsb-release
+
+# Save the .service file in etc/systemd/system/
+# etc/systemd/system/ is the default systemd directory in many Linux distros, including Red Hat Linux.
