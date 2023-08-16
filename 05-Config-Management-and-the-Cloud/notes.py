@@ -162,3 +162,15 @@
 ### Week 3 - Automation in the Cloud ###
 ########################################
 
+# SaaS - think WRS ;)
+# PaaS - 
+# IaaS - barebones
+
+# Capacity
+
+# Practice Quiz
+# Public cloud
+# Container - 
+# Amzn Elastic Beanstalk, G App Engine, MS App Service (examples of Managed Web App Platforms)
+# Private cloud
+# Vertical scaling
