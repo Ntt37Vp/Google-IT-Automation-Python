@@ -1,4 +1,6 @@
-# ##Week 1 - Automating w/ Config Management
+###############################################
+### Week 1 - Automating w/ Config Management ##
+###############################################
 # Config Management -> Node
 # Puppet (think Ansible ;)
 # IaC (infra as code)
@@ -56,7 +58,10 @@
 
 # Test and Repair paradigm (makes sure the next steps are necessary and are not already in place)
 
+#################################
 ### WEEK 2 - Deploying Puppet ###
+#################################
+
 # sudo apt install puppet-master
 # create a puppet file "Manifest" ends with .pp
 
@@ -152,4 +157,8 @@
 # Ways to check syntax of manifests? run full NOOP, run RSPEC tests, Puppet Parser validate?
 
 
-# Module 2 Review
+
+########################################
+### Week 3 - Automation in the Cloud ###
+########################################
+
