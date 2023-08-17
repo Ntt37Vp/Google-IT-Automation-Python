@@ -184,3 +184,22 @@
 
 # Save the .service file in etc/systemd/system/
 # etc/systemd/system/ is the default systemd directory in many Linux distros, including Red Hat Linux.
+
+# Install GCloud CLI
+# https://cloud.google.com/sdk/docs/install-sdk#linux
+# sample CLI to run multiple vms from template
+# gcloud compute instances create --source-instance-template template-name servername1 servername2...
+
+# Load balancer
+# Auto-scaling
+# load balancer for DB: memcached & redis
+# Orchestration -- is the automated configuration and coordination of complex IT systems and services.
+# Cloud Infra as Code (IaC)
+# Terraform
+
+# Practice Quiz
+# Monitoring & Alertign
+# Entry point
+# Round Robin
+# Autoscaling
+# Terraform, CloudFormation (AWS), Azure Resource Mgnr
