@@ -203,3 +203,30 @@
 # Round Robin
 # Autoscaling
 # Terraform, CloudFormation (AWS), Azure Resource Mgnr
+
+
+############################################
+### Week 4 - Building Software for Cloud ###
+############################################
+
+# STORAGE
+# Block storage - "like a hard drive"
+# Persistent -- long live
+# Ephemeral -- temporary
+# Object storage -- "blob storage", think S3
+# (Birary Large Object) or BLOB
+# Throughput -
+# Latency --
+# Hot data
+# Cold data
+# Round robin DNS
+# Sticky sessions
+# CDNs
+# Rate limit
+
+# Practice Quiz
+# Latency - amount of time it takes to complete a read or write operation.
+# Sticky sessions
+# Quota increase
+# Environments - referring to everything needed to run a service
+# CDNs -- allow an ISP to select the closest server for the content it is requesting.
