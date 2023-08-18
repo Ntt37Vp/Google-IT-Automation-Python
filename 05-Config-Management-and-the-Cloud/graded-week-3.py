@@ -15,3 +15,13 @@
 # sudo systemctl enable hello_cloud.service
 
 # Restart the VM
+
+
+# Create VMs using a template
+# Navigation menu > Compute Engine > Images > Create Image
+# Navigation menu > Compute Engine > Instance templates:
+
+
+# On GCLOUD CLI
+# gcloud compute instances create --zone us-west4-a --source-instance-template vm1-template vm2 vm3 vm4 vm5 vm6 vm7 vm8
+# gcloud compute instances list
