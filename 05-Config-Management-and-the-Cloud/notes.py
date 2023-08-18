@@ -230,3 +230,15 @@
 # Quota increase
 # Environments - referring to everything needed to run a service
 # CDNs -- allow an ISP to select the closest server for the content it is requesting.
+
+# Monitoring & Alerting
+# Push and Pull models
+# AWS CloudWatch, GCP
+# Whitebox monitoring -- checks the behavior from the inside
+# Blackbox monitoring -- check it from the Outside view
+# in Linux, CRON handles periodic jobs
+# Pages are alerts that need immediate human attention, and are often in the form of SMS or email.
+
+# Service-level Objectives (SLO) -- pre-established perf goals for a specific service
+# error budget
+# if we have an SLO of 99.99%, that gives us an error budget of .01%.
