@@ -242,3 +242,17 @@
 # Service-level Objectives (SLO) -- pre-established perf goals for a specific service
 # error budget
 # if we have an SLO of 99.99%, that gives us an error budget of .01%.
+
+# Alerting policy based on metric
+# Sample script to run an infinite while loop
+# while true; do true; done &
+
+# Containers like Docker
+
+# Practice Quiz 
+# Switching to a secondary instance, restore from backup, rollback
+# Having secondary VM, Having secondary vendor, 
+# Implement automated backups, Test backups by restoring
+# Containers
+# Use extensive logging in all parts, Use test instances
+
