@@ -1,7 +1,7 @@
 ### Week 1 - Manipulating Images ###
 # PyPi
 # Pillow
-import yaml
+# import yaml
 
 # For example, if we wanted to resize an image and save the new image with a new name, we could do it with:
 # from PIL import Image
@@ -19,7 +19,6 @@ import yaml
 # Because the methods return a new object, we can even combine these operations into just one line that rotates, resizes, and saves:
 # im = Image.open("example.jpg")
 # im.rotate(180).resize((640, 480)).save("flipped_and_resized.jpg")
-
 
 
 ### Week 2 - Interacting with Web Services ###
@@ -65,3 +64,12 @@ import yaml
 # Flask
 
 
+### Week 3 - Sending Emails ###
+# SMTP and MIME are the email standards
+
+# from email.message import EmailMessage
+# message = EmailMessage()
+# print(message)
+
+
+# Sending using smtplib module
