@@ -163,3 +163,10 @@
 # [2, 5, 8, 3, 1, 1, 13]
 # >>> print(report_pie.labels)
 # ['apples', 'bananas', 'cherries', 'durians', 'elderberries', 'figs', 'grapes']
+
+
+### WEEK 4 - Putting it All Together ###
+# Write a script that summarizes and processes sales data into different categories
+# Generate a PDF using Python
+# Automatically send a PDF by email
+# Write a script to check the health status of the system
